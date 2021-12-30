@@ -207,7 +207,7 @@
             <soft-limits-enabled>true</soft-limits-enabled>
             <z-probe-actuator-name>ZMIN</z-probe-actuator-name>
             <pump-actuator-name>VAC</pump-actuator-name>
-            <homing-fiducial-location units="Millimeters" x="267.244" y="73.037" z="0.0" rotation="0.0"/>
+            <homing-fiducial-location units="Millimeters" x="240.0" y="72.0" z="0.0" rotation="0.0"/>
             <calibration-primary-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <calibration-secondary-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </head>
@@ -9418,9 +9418,9 @@
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="debug_template" enabled="false" prefix="fidloc_template_" suffix=".png"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="template_gray" enabled="true" conversion="Bgr2Gray"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" default-light="true" settle-first="true" count="1"/>
-                        <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="300"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="image_gray" enabled="true" conversion="Rgb2Gray"/>
-                        <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="250" auto="false" invert="false"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="50" auto="false" invert="true"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="1" enabled="true" diameter="300"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="debug_original" enabled="false" prefix="fidloc_original_" suffix=".png"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.MatchTemplate" name="match_template" enabled="true" template-stage-name="template_gray" threshold="0.7" corr="0.85" normalize="true"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recall_image" enabled="true" image-stage-name="image"/>
