@@ -192,7 +192,7 @@
                   <brightness property="Brightness" value="155" auto="false"/>
                   <contrast property="Contrast" value="126" auto="false"/>
                   <exposure property="Exposure" value="-6" auto="true"/>
-                  <focus property="Focus" value="7" auto="true"/>
+                  <focus property="Focus" value="8" auto="true"/>
                   <gain property="Gain" value="0" auto="false"/>
                   <gamma property="Gamma" value="97" auto="false"/>
                   <hue property="Hue" value="127" auto="false"/>
@@ -215,11 +215,11 @@
       <signalers/>
       <feeders>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567791783360" name="FD01" enabled="true" part-id="R0603-1K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="59.256" y="36.127" z="1.0" rotation="0.0"/>
+            <location units="Millimeters" x="59.256" y="36.127" z="-9.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.198" y="39.583" z="1.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.198" y="39.583" z="1.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.598" y="39.583" z="1.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
-            <feed-speed>0.5</feed-speed>
+            <feed-speed>1.0</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -6814,7 +6814,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.022940177371293828" center-y="0.09369942262396917" radius="0.02718030405023529" phase-shift="-8.296299443079116" units="Millimeters" peak-error="0.03567535759802421" rms-error="0.024725180450313185"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.027597789444444437" center-y="0.051484664444444446" radius="0.016515834406506714" phase-shift="1.5403701781228403" units="Millimeters" peak-error="0.04076542421251239" rms-error="0.020560295954102574"/>
                   </entry>
                </runout-compensation-lookup>
                <offset-threshold-length value="0.3" units="Millimeters"/>
@@ -7019,7 +7019,7 @@
             <vision-calibration-tolerance value="0.7" units="Millimeters"/>
             <max-part-diameter value="20.0" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="1.0" recalibration-trigger="NozzleTipChangeInJob" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-first="true" count="1"/>
