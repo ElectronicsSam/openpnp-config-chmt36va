@@ -192,7 +192,7 @@
                   <brightness property="Brightness" value="155" auto="false"/>
                   <contrast property="Contrast" value="126" auto="false"/>
                   <exposure property="Exposure" value="-6" auto="true"/>
-                  <focus property="Focus" value="8" auto="true"/>
+                  <focus property="Focus" value="7" auto="true"/>
                   <gain property="Gain" value="0" auto="false"/>
                   <gamma property="Gamma" value="97" auto="false"/>
                   <hue property="Hue" value="127" auto="false"/>
@@ -899,7 +899,7 @@
             <units-per-pixel units="Millimeters" x="0.01025" y="0.01025" z="0.0" rotation="0.0"/>
             <default-z value="0.0" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="166.18300000000002" y="25.715" z="0.0" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="167.863" y="26.055" z="0.0" rotation="0.0"/>
             <calibration enabled="false">
                <camera-matrix length="9">2.781427202973545E-309, 4.4E-323, 3.5617E-318, 0.0, 6.365987373E-314, 5.3049894774E-313, 2.1219957944E-314, 0.0, 3.541463E-318</camera-matrix>
                <distortion-coefficients length="5">1.0013638727899848E-307, 8.010890611263905E-307, 1.1571008791195912E-306, 2.0471996857706277E-306, 9.34612506257897E-307</distortion-coefficients>
@@ -930,8 +930,8 @@
             <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                <focal-resolution value="0.05" units="Millimeters"/>
             </focus-provider>
-            <back-light-compensation property="BackLightCompensation" value="143" auto="false"/>
-            <brightness property="Brightness" value="4" auto="false"/>
+            <back-light-compensation property="BackLightCompensation" value="75" auto="false"/>
+            <brightness property="Brightness" value="-25" auto="false"/>
             <contrast property="Contrast" value="20" auto="false"/>
             <exposure property="Exposure" value="0" auto="true"/>
             <focus property="Focus"/>
