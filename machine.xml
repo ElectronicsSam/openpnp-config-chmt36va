@@ -192,7 +192,7 @@
                   <brightness property="Brightness" value="155" auto="false"/>
                   <contrast property="Contrast" value="126" auto="false"/>
                   <exposure property="Exposure" value="-6" auto="true"/>
-                  <focus property="Focus" value="8" auto="true"/>
+                  <focus property="Focus" value="4" auto="true"/>
                   <gain property="Gain" value="0" auto="false"/>
                   <gamma property="Gamma" value="97" auto="false"/>
                   <hue property="Hue" value="127" auto="false"/>
@@ -6597,8 +6597,6 @@
                <text><![CDATA[M805   ; Vacuum nozzle 2 off]]></text>
                <text><![CDATA[M813   ; Turn off BLOW]]></text>
                <text><![CDATA[M810   ; Turn on UPLED]]></text>
-               <text><![CDATA[G4P100 ; Wait 750 milliseconds]]></text>
-               <text><![CDATA[M811   ; Turn off UPLED]]></text>
                <text><![CDATA[M92 X31.95 Y31.992 ; Set steps per mm]]></text>
             </command>
             <command type="DISABLE_COMMAND">
@@ -6814,7 +6812,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.027597789444444437" center-y="0.051484664444444446" radius="0.016515834406506714" phase-shift="1.5403701781228403" units="Millimeters" peak-error="0.04076542421251239" rms-error="0.020560295954102574"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.03959682833333333" center-y="0.1352969088888889" radius="0.0069091838388000175" phase-shift="-147.1519744887176" units="Millimeters" peak-error="0.1600101403490364" rms-error="0.06320551849366673"/>
                   </entry>
                </runout-compensation-lookup>
                <offset-threshold-length value="0.3" units="Millimeters"/>
