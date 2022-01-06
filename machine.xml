@@ -191,15 +191,15 @@
                   <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
                   <brightness property="Brightness" value="155" auto="false"/>
                   <contrast property="Contrast" value="126" auto="false"/>
-                  <exposure property="Exposure" value="-6" auto="true"/>
-                  <focus property="Focus" value="4" auto="true"/>
+                  <exposure property="Exposure" value="-3" auto="false"/>
+                  <focus property="Focus" value="10" auto="false"/>
                   <gain property="Gain" value="0" auto="false"/>
                   <gamma property="Gamma" value="97" auto="false"/>
                   <hue property="Hue" value="127" auto="false"/>
                   <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
                   <saturation property="Saturation" value="255" auto="false"/>
                   <sharpness property="Sharpness" value="1" auto="false"/>
-                  <white-balance property="WhiteBalance" value="4600" auto="true"/>
+                  <white-balance property="WhiteBalance" value="5000" auto="false"/>
                   <zoom property="Zoom"/>
                </camera>
             </cameras>
@@ -567,6 +567,30 @@
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceTubeFeeder" version="1.1" id="FDR16576b88c2a5c3b8" name="FDT01" enabled="false" part-id="QFN-64_EP_9x9_Pitch0.5mm-PIC32MX570F512" retry-count="3" feed-retry-count="0" pick-retry-count="0">
             <location units="Millimeters" x="209.323" y="59.907" z="-9.0" rotation="90.0"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceLoosePartFeeder" version="1.1" id="FDR16c7a5feda782f64" name="ReferenceLoosePartFeeder" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="capture" enabled="true" default-light="true" settle-first="true" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="highlights" enabled="true" threshold="200" auto="false" invert="false"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recall1" enabled="true" image-stage-name="gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="lowlights" enabled="true" threshold="120" auto="false" invert="true"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.Add" name="combined" enabled="true" first-stage-name="highlights" second-stage-name="lowlights" first-scalar="1.0" second-scalar="1.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="merged" enabled="true" kernel-size="9"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="contours" enabled="true" retrieval-mode="External" approximation-method="Simple"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filtered_contours" enabled="true" contours-stage-name="contours" min-area="500.0" max-area="1500.0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.MinAreaRectContours" name="rects" enabled="true" contours-stage-name="filtered_contours"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.OrientRotatedRects" name="oriented_rects" enabled="true" rotated-rects-stage-name="rects" orientation="Landscape" negate-angle="false" snap-angle="0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.OrientRotatedRects" name="results" enabled="true" rotated-rects-stage-name="rects" orientation="Landscape" negate-angle="true" snap-angle="0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recall2" enabled="true" image-stage-name="capture"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawContours" name="draw_contours" enabled="true" contours-stage-name="filtered_contours" thickness="2" index="-1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawRotatedRects" name="draw_results" enabled="true" rotated-rects-stage-name="oriented_rects" thickness="2" draw-rect-center="true" rect-center-radius="3" show-orientation="true">
+                     <color r="51" g="255" b="51" a="255"/>
+                  </cv-stage>
+               </stages>
+            </pipeline>
          </feeder>
       </feeders>
       <cameras>
