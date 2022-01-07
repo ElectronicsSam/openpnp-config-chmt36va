@@ -1,5 +1,5 @@
 <openpnp-machine>
-   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.21" auto-tool-select="true">
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.24" auto-tool-select="true">
       <axes>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS16426decf928a508" name="X" type="X" driver-id="DRV16426decf5f501b0" letter="X" backlash-compensation-method="None" backlash-speed-factor="0.0" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -228,7 +228,7 @@
             </vision>
             <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792126705" name="FD02" enabled="true" part-id="R0603-1K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792126705" name="FD02" enabled="false" part-id="R0603-1K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="59.011" y="49.196" z="-10.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="68.949" y="52.764" z="1.0" rotation="0.0"/>
             <feed-end-location units="Millimeters" x="73.349" y="52.764" z="1.0" rotation="0.0"/>
@@ -267,12 +267,12 @@
             </vision>
             <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792632938" name="FD05" enabled="true" part-id="SM_0805_CGR_N-4.7u_35V" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.963" y="90.477" z="-10.0" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="68.922" y="93.948" z="1.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.322" y="93.948" z="0.0" rotation="0.0"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792632938" name="FD05" enabled="true" part-id="R0603-1K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
+            <location units="Millimeters" x="59.078" y="88.236" z="-10.0" rotation="90.0"/>
+            <feed-start-location units="Millimeters" x="69.048" y="91.551" z="1.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.448" y="91.551" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
-            <feed-speed>0.3</feed-speed>
+            <feed-speed>1.0</feed-speed>
             <vision enabled="false">
                <area-of-interest x="0" y="0" width="0" height="0"/>
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -2048,7 +2048,7 @@
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-first="true" count="1"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="13" enabled="false" prefix="bv_source_" suffix=".png"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="10" enabled="false" kernel-size="9"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="600"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="700"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="1" enabled="true" conversion="Rgb2Gray"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="2" enabled="false" auto="false" fraction-to-mask="0.0" hue-min="60" hue-max="130" saturation-min="0" saturation-max="255" value-min="0" value-max="255" invert="false" binary-mask="false"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="false" conversion="Hsv2BgrFull"/>
@@ -6361,15 +6361,15 @@
          </part-alignment>
       </part-alignments>
       <drivers>
-         <driver class="org.openpnp.machine.reference.driver.GcodeAsyncDriver" id="DRV16426decf5f501b0" name="GcodeDriver" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="0.0" backlash-offset-y="0.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.0" timeout-milliseconds="10000" connect-wait-time-milliseconds="1000" visual-homing-enabled="false" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="true" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="300000" writer-polling-interval="100" writer-queue-timeout="60000" max-commands-queued="1000" confirmation-flow-control="false" reported-location-confirmation="true" interpolation-max-steps="32" interpolation-jerk-steps="4" interpolation-time-step="1.0E-5" interpolation-min-step="16">
-            <serial line-ending-type="LF" port-name="COM3" baud="115200" flow-control="XonXoff" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+         <driver class="org.openpnp.machine.reference.driver.GcodeAsyncDriver" id="DRV16426decf5f501b0" name="GcodeDriver" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="0.0" backlash-offset-y="0.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.0" timeout-milliseconds="15000" connect-wait-time-milliseconds="1000" visual-homing-enabled="false" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="true" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="300000" writer-polling-interval="100" writer-queue-timeout="60000" max-commands-queued="1000" confirmation-flow-control="true" reported-location-confirmation="true" interpolation-max-steps="32" interpolation-jerk-steps="4" interpolation-time-step="1.0E-5" interpolation-min-step="16">
+            <serial line-ending-type="LF" port-name="COM3" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Smoothieware, FIRMWARE_URL:http%3A//smoothieware.org, X-SOURCE_CODE_URL:https://github.com/Smoothieware/Smoothieware, FIRMWARE_VERSION:chmt-44fc5430, X-FIRMWARE_BUILD_DATE:Dec 28 2021 17:19:25, X-SYSTEM_CLOCK:168MHz, X-AXES:7, X-GRBL_MODE:0, X-CNC:0, X-MSD:1]]></detected-firmware>
-            <reported-axes><![CDATA[ok C: X:160.4553 Y:104.3336 Z:-0.4711 A:96.0000 B:0.0000 C:0.0000 E:0.0000]]></reported-axes>
+            <reported-axes><![CDATA[ok C: X:0.0000 Y:0.0000 Z:0.0000 A:0.0000 B:0.0000 C:0.0000 E:0.0000]]></reported-axes>
             <command type="COMMAND_CONFIRM_REGEX">
-               <text><![CDATA[ok]]></text>
+               <text><![CDATA[^ok.*]]></text>
             </command>
             <command type="CONNECT_COMMAND">
                <text><![CDATA[G21 ; Set millimeters mode]]></text>
@@ -6527,13 +6527,13 @@
                <text><![CDATA[{False:M809 ; turn off vacuum pump}]]></text>
             </command>
             <command type="GET_POSITION_COMMAND">
-               <text><![CDATA[M114]]></text>
+               <text><![CDATA[M114 ; get position]]></text>
             </command>
             <command type="SET_GLOBAL_OFFSETS_COMMAND">
                <text><![CDATA[G92 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {B:B%.4f} ; reset coordinates]]></text>
             </command>
             <command type="POSITION_REPORT_REGEX">
-               <text><![CDATA[.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) .*A:(?<A>-?\d+\.\d+) B:(?<B>-?\d+\.\d+).*]]></text>
+               <text><![CDATA[^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) .*A:(?<A>-?\d+\.\d+) B:(?<B>-?\d+\.\d+).*]]></text>
             </command>
             <command head-mountable-id="ACT164b1722a7a028e0" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[;M81{True:2}{False:3} ; BLOW M812 on / M813 off]]></text>
@@ -6573,7 +6573,7 @@
          </entry>
       </properties>
       <nozzle-tips>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="503-1" pick-dwell-milliseconds="200" place-dwell-milliseconds="5000" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="50" part-off-dwell-milliseconds="50" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="503-1" pick-dwell-milliseconds="200" place-dwell-milliseconds="200" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="50" part-off-dwell-milliseconds="50" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="86.321" y="-11.934" z="0.0" rotation="0.0"/>
             <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="86.321" y="-11.934" z="0.0" rotation="0.0"/>
@@ -6609,7 +6609,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.015598750555555554" center-y="-0.09458810444444443" radius="0.02145558790938773" phase-shift="-88.11722649288764" units="Millimeters" peak-error="0.07221548783264317" rms-error="0.037252312821603316"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.06119509833333332" center-y="-0.03951148666666667" radius="0.03103961543583277" phase-shift="-67.15993376689302" units="Millimeters" peak-error="0.04893104757850989" rms-error="0.02977228849017919"/>
                   </entry>
                </runout-compensation-lookup>
                <offset-threshold-length value="0.3" units="Millimeters"/>
@@ -6621,7 +6621,7 @@
             <part-on-check-align>true</part-on-check-align>
             <part-on-check-before-place>true</part-on-check-before-place>
             <vacuum-level-part-on-low>160.0</vacuum-level-part-on-low>
-            <vacuum-level-part-on-high>270.0</vacuum-level-part-on-high>
+            <vacuum-level-part-on-high>320.0</vacuum-level-part-on-high>
             <vacuum-difference-part-on-low>6.0</vacuum-difference-part-on-low>
             <vacuum-difference-part-on-high>6.0</vacuum-difference-part-on-high>
             <method-part-off>None</method-part-off>
@@ -6798,7 +6798,7 @@
             <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP16c596c25a505480" name="506-2" pick-dwell-milliseconds="200" place-dwell-milliseconds="5000" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP16c596c25a505480" name="506-2" pick-dwell-milliseconds="200" place-dwell-milliseconds="600" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
