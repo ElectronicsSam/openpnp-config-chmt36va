@@ -4,5 +4,136 @@
    <part id="R0201-1K" height-units="Millimeters" height="0.25" package-id="R0201" speed="1.0" pick-retry-count="0"/>
    <part id="R0402-1K" height-units="Millimeters" height="0.5" package-id="R0402" speed="1.0" pick-retry-count="0"/>
    <part id="R0603-1K" height-units="Millimeters" height="0.75" package-id="R0603" speed="1.0" pick-retry-count="0"/>
-   <part id="FIDUCIAL-HOME" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0" pick-retry-count="0"/>
+   <part id="FIDUCIAL-HOME" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-HOME" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0603_1608Metric-10n" height-units="Millimeters" height="0.75" package-id="C_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0603_1608Metric-100n" name="CL10B104K08NNNC" height-units="Millimeters" height="0.75" package-id="C_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS173366ca4c13ac28" id="C_0603_1608Metric-1u" height-units="Millimeters" height="0.8" package-id="C_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0805_2012Metric-10u" height-units="Millimeters" height="1.3" package-id="C_0805_2012Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="CP_EIA-7343-31_Kemet-D-100u" height-units="Millimeters" height="0.0" package-id="CP_EIA-7343-31_Kemet-D" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-4p7" height-units="Millimeters" height="0.0" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="D_SOD-523-ESD-3V3" height-units="Millimeters" height="0.0" package-id="D_SOD-523" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_0603_1608Metric-Red" height-units="Millimeters" height="0.75" package-id="LED_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="L_0805_2012Metric-Ferrite" height-units="Millimeters" height="1.1" package-id="L_0805_2012Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="TSSOP-24_4.4x7.8mm_P0.65mm-AD7124-4BRUZ" height-units="Millimeters" height="0.0" package-id="TSSOP-24_4.4x7.8mm_P0.65mm" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-523-DMN6140L-13" height-units="Millimeters" height="0.0" package-id="SOT-523" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-1000" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS173366ca4c13ac28" id="R_0603_1608Metric_slimmed_down-22" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="STM32L010RBT6-LQFP64-10x10mm" height-units="Millimeters" height="1.4" package-id="STM32L010RBT6" speed="1.0" pick-retry-count="0"/>
+   <part id="Crystal_SMD_MicroCrystal_CC5V-T1A-2Pin_4.1x1.5mm-32.768" height-units="Millimeters" height="0.0" package-id="Crystal_SMD_MicroCrystal_CC5V-T1A-2Pin_4.1x1.5mm" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS173366ca4c13ac28" id="FIDUCIAL_1mmX2mm-CR-Fiducial" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS173366ca4c13ac28" id="C_0603_1608Metric-1uF" height-units="Millimeters" height="0.0" package-id="C_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0603_1608Metric-100nF" height-units="Millimeters" height="0.75" package-id="C_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-10R" name="" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS173366ca4c13ac28" fiducial-vision-id="FVS173366ca64d3149c" id="FIDUCIAL-EUROCIRCUITS" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-HOME" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-DNP" height-units="Millimeters" height="0.0" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-10p" height-units="Millimeters" height="0.0" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-33p" height-units="Millimeters" height="0.0" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_1210_3225Metric-100u" height-units="Millimeters" height="2.6" package-id="C_1210_3225Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_0603_1608Metric-LED1" height-units="Millimeters" height="0.0" package-id="LED_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_0603_1608Metric-LED2" height-units="Millimeters" height="0.0" package-id="LED_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="D_SMB-SM6T6V8A" height-units="Millimeters" height="2.3" package-id="D_SMB" speed="1.0" pick-retry-count="0"/>
+   <part id="D_SMB-SM6T24A" height-units="Millimeters" height="2.3" package-id="D_SMB" speed="1.0" pick-retry-count="0"/>
+   <part id="U-DFN1610-2-typeB-TVS" height-units="Millimeters" height="0.5" package-id="U-DFN1610-2-typeB" speed="1.0" pick-retry-count="0"/>
+   <part id="Fuse_0603_1608Metric-3A_32V" height-units="Millimeters" height="0.75" package-id="Fuse_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="QFP50P1200X1200X160-64N-STM32L562RET6" height-units="Millimeters" height="1.45" package-id="QFP50P1200X1200X160-64N" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT95P280X130-5N-XC9265A331MR-G" height-units="Millimeters" height="1.1" package-id="SOT95P280X130-5N" speed="1.0" pick-retry-count="0"/>
+   <part id="USB_Micro-B_Amphenol_10104110_Horizontal-USB_B_Micro" height-units="Millimeters" height="0.0" package-id="USB_Micro-B_Amphenol_10104110_Horizontal" speed="1.0" pick-retry-count="0"/>
+   <part id="71882756-CRLink_Micro_Match" height-units="Millimeters" height="0.0" package-id="71882756" speed="1.0" pick-retry-count="0"/>
+   <part id="microSIM_JAE_SF53S006VCBR2000-SIM_Card_Shielded" height-units="Millimeters" height="0.0" package-id="microSIM_JAE_SF53S006VCBR2000" speed="1.0" pick-retry-count="0"/>
+   <part id="Brouns_SRN8040TA-4.7uH" height-units="Millimeters" height="0.0" package-id="Brouns_SRN8040TA" speed="1.0" pick-retry-count="0"/>
+   <part id="L_1008_2520Metric-10uH" height-units="Millimeters" height="1.2" package-id="L_1008_2520Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="SOTFL65P210X105-3N-RU1J002YNTCL" height-units="Millimeters" height="0.85" package-id="SOTFL65P210X105-3N" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-10K" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-1K" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-22R" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-2K2" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-10M" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-1M" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-0R" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-120" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-120K" height-units="Millimeters" height="0.75" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-DNP" height-units="Millimeters" height="0.0" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0402_1005Metric-0R" height-units="Millimeters" height="0.35" package-id="R_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="SW_SPST_B3S-1000-Reset" height-units="Millimeters" height="0.0" package-id="SW_SPST_B3S-1000" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-6-WE-TVS-82400102" height-units="Millimeters" height="0.0" package-id="SOT-23-6" speed="1.0" pick-retry-count="0"/>
+   <part id="SOIC-8_5.23x5.23mm_P1.27mm-W25Q32JVSS" height-units="Millimeters" height="1.95" package-id="SOIC-8_5.23x5.23mm_P1.27mm" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-5-MCP73831-2-OT" height-units="Millimeters" height="0.0" package-id="SOT-23-5" speed="1.0" pick-retry-count="0"/>
+   <part id="SOIC-8_3.9x4.9mm_P1.27mm-ATA6561" height-units="Millimeters" height="1.5" package-id="SOIC-8_3.9x4.9mm_P1.27mm" speed="1.0" pick-retry-count="0"/>
+   <part id="TSSOP-20_4.4x6.5mm_P0.65mm-TXS0108EPW" height-units="Millimeters" height="1.2" package-id="TSSOP-20_4.4x6.5mm_P0.65mm" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS_Default" id="Crystal_SMD_MicroCrystal_CC5V-T1A-2Pin_4.1x1.5mm-32768" height-units="Millimeters" height="0.9" package-id="Crystal_SMD_MicroCrystal_CC5V-T1A-2Pin_4.1x1.5mm" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS173366ca51da1b74" id="U-DFN1610-2-typeB-ESD-3V3" height-units="Millimeters" height="0.5" package-id="U-DFN1610-2-typeB" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-560" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-1K" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-22" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="TQFP-32_7x7mm_P0.8mm-ATmega328P-AU" height-units="Millimeters" height="0.8" package-id="TQFP-32_7x7mm_P0.8mm" speed="1.0" pick-retry-count="0"/>
+   <part id="X3-SMD-3.6X1.3X0.8MM-8MHZ-33PF-0.1%" height-units="Millimeters" height="0.8" package-id="X3-SMD-3.6X1.3X0.8MM" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-PESD5V2S2UT" height-units="Millimeters" height="1.1" package-id="SOT-23" speed="1.0" pick-retry-count="0"/>
+   <part id="71882758-I2C_Bus" height-units="Millimeters" height="0.0" package-id="71882758" speed="1.0" pick-retry-count="0"/>
+   <part id="944-RJ45" height-units="Millimeters" height="0.0" package-id="944" speed="1.0" pick-retry-count="0"/>
+   <part id="SOIC-28W_7.5x17.9mm_P1.27mm-MCP23017_SO" height-units="Millimeters" height="0.0" package-id="SOIC-28W_7.5x17.9mm_P1.27mm" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-10K" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-8.2pF" height-units="Millimeters" height="0.0" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-100n" height-units="Millimeters" height="0.5" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-47n" height-units="Millimeters" height="0.0" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0402_1005Metric-1n" height-units="Millimeters" height="0.0" package-id="C_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="C_0603_1608Metric-4u7" height-units="Millimeters" height="0.8" package-id="C_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="Crodeon_logo_new-CrodeonLogo" height-units="Millimeters" height="0.0" package-id="Crodeon_logo_new" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-NUP2105L" height-units="Millimeters" height="0.0" package-id="SOT-23" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm-LED1" height-units="Millimeters" height="0.0" package-id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm-LED2" height-units="Millimeters" height="0.0" package-id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" speed="1.0" pick-retry-count="0"/>
+   <part id="D_SMA-US2DA" height-units="Millimeters" height="2.0" package-id="D_SMA" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm-Red" height-units="Millimeters" height="0.0" package-id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" speed="1.0" pick-retry-count="0"/>
+   <part id="XCVR_YC0002AA-YC0002AA" height-units="Millimeters" height="0.0" package-id="XCVR_YC0002AA" speed="1.0" pick-retry-count="0"/>
+   <part id="QFN16_TPS61030-TPS61032RSAR" height-units="Millimeters" height="0.9" package-id="QFN16_TPS61030" speed="1.0" pick-retry-count="0"/>
+   <part id="225266_ERNI_Male-ERNI_M12_(crossed_pinout)" height-units="Millimeters" height="0.0" package-id="225266_ERNI_Male" speed="1.0" pick-retry-count="0"/>
+   <part id="U.FL_Hirose_U.FL-R-SMT-1_Vertical-Conn_Coaxial" height-units="Millimeters" height="0.0" package-id="U.FL_Hirose_U.FL-R-SMT-1_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part id="JST_SM02B-PASS-TBT(LF)(SN)-Battery" height-units="Millimeters" height="0.0" package-id="JST_SM02B-PASS-TBT(LF)(SN)" speed="1.0" pick-retry-count="0"/>
+   <part id="L_0402_1005Metric-12nH" height-units="Millimeters" height="0.0" package-id="L_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="SPM6530-2.2uH" height-units="Millimeters" height="0.0" package-id="SPM6530" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-120" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-DNP" height-units="Millimeters" height="0.0" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0402_1005Metric-DNP" height-units="Millimeters" height="0.0" package-id="R_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-120K" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-10M" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-1M" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-4K7_1%" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-150K" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-100K" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-100" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="XCVR_BG95-BG95" height-units="Millimeters" height="0.0" package-id="XCVR_BG95" speed="1.0" pick-retry-count="0"/>
+   <part id="IC_BQ25672RQMR-BQ25672RQMR" height-units="Millimeters" height="0.9" package-id="IC_BQ25672RQMR" speed="1.0" pick-retry-count="0"/>
+   <part id="WE-MCA_7488920157-WE-GNSS" height-units="Millimeters" height="0.0" package-id="WE-MCA_7488920157" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS_Default" id="C_0805_2012Metric-10u_25V" height-units="Millimeters" height="1.3" package-id="C_0805_2012Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-CAN_ESD" height-units="Millimeters" height="1.1" package-id="SOT-23" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm-LED_netstatus" height-units="Millimeters" height="0.0" package-id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" speed="1.0" pick-retry-count="0"/>
+   <part id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm-LED_charge" height-units="Millimeters" height="0.0" package-id="LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-100K" height-units="Millimeters" height="0.0" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="U-DFN1610-2-typeB-TVS_D5V0" height-units="Millimeters" height="0.5" package-id="U-DFN1610-2-typeB" speed="1.0" pick-retry-count="0"/>
+   <part id="U-DFN1610-2-typeB-TVS-5V" height-units="Millimeters" height="0.5" package-id="U-DFN1610-2-typeB" speed="1.0" pick-retry-count="0"/>
+   <part id="FIDUCIAL_0.5mmX1mm-CR-Fiducial" height-units="Millimeters" height="0.0" package-id="FIDUCIAL_0.5mmX1mm" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-4K7" height-units="Millimeters" height="0.0" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric-10" height-units="Millimeters" height="0.55" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-5-TCR2LF33" height-units="Millimeters" height="1.1" package-id="SOT-23-5" speed="1.0" pick-retry-count="0"/>
+   <part id="QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm-STM32L071KBUx" height-units="Millimeters" height="0.55" package-id="QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS_Default" id="U-DFN1610-2-typeB-TVS_5V" height-units="Millimeters" height="0.0" package-id="U-DFN1610-2-typeB" speed="1.0" pick-retry-count="0"/>
+   <part id="PinHeader_1x04_P2.54mm_Vertical-JST-PA-4" height-units="Millimeters" height="0.0" package-id="PinHeader_1x04_P2.54mm_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part id="PinHeader_1x15_P2.00mm_Vertical-sensor_con" height-units="Millimeters" height="0.0" package-id="PinHeader_1x15_P2.00mm_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part id="PinHeader_1x02_P2.54mm_Vertical-RAIN" height-units="Millimeters" height="0.0" package-id="PinHeader_1x02_P2.54mm_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS_Default" id="STM32L010RBT6-STM32L010RBT6" height-units="Millimeters" height="0.0" package-id="STM32L010RBT6" speed="1.0" pick-retry-count="0"/>
+   <part id="PinSocket_1x02_P2.54mm_Vertical-I2C_Debug" height-units="Millimeters" height="0.0" package-id="PinSocket_1x02_P2.54mm_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part id="PinSocket_1x04_P2.54mm_Vertical-CRLink_Uart_Debug" height-units="Millimeters" height="0.0" package-id="PinSocket_1x04_P2.54mm_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part id="PinHeader_2x03_P2.54mm_Vertical-20V_CRLink" height-units="Millimeters" height="0.0" package-id="PinHeader_2x03_P2.54mm_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part id="PinHeader_2x03_P2.54mm_Vertical-5V_CRLink" height-units="Millimeters" height="0.0" package-id="PinHeader_2x03_P2.54mm_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part id="225266_ERNI_Male-ERNI_M12" height-units="Millimeters" height="0.0" package-id="225266_ERNI_Male" speed="1.0" pick-retry-count="0"/>
+   <part id="PinHeader_1x02_P2.54mm_Vertical-USB_PWR" height-units="Millimeters" height="0.0" package-id="PinHeader_1x02_P2.54mm_Vertical" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0603_1608Metric_slimmed_down-4k7" height-units="Millimeters" height="0.0" package-id="R_0603_1608Metric_slimmed_down" speed="1.0" pick-retry-count="0"/>
+   <part id="R_2512_6332Metric_Pad1.40x3.35mm_HandSolder-100m" height-units="Millimeters" height="0.0" package-id="R_2512_6332Metric_Pad1.40x3.35mm_HandSolder" speed="1.0" pick-retry-count="0"/>
+   <part id="FT4232H-MINI-MODULE-FT4232H_module" height-units="Millimeters" height="0.0" package-id="FT4232H-MINI-MODULE" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS_Default" id="SOIC-8_3.9x4.9mm_P1.27mm-INA219AxD" height-units="Millimeters" height="0.0" package-id="SOIC-8_3.9x4.9mm_P1.27mm" speed="1.0" pick-retry-count="0"/>
+   <part id="Nexperia_CFP3_SOD-123W-TVS_7V" height-units="Millimeters" height="1.1" package-id="Nexperia_CFP3_SOD-123W" speed="1.0" pick-retry-count="0"/>
+   <part id="Fuse_0402_1005Metric-500mA_24V" height-units="Millimeters" height="0.0" package-id="Fuse_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0402_1005Metric-100" height-units="Millimeters" height="0.35" package-id="R_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="R_0402_1005Metric-1K" height-units="Millimeters" height="0.35" package-id="R_0402_1005Metric" speed="1.0" pick-retry-count="0"/>
+   <part id="DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm-ATA6561" height-units="Millimeters" height="0.8" package-id="DFN-8-1EP_3x3mm_P0.65mm_EP1.55x2.4mm" speed="1.0" pick-retry-count="0"/>
+   <part id="SOT-23-5-AP7370-50W5-7" height-units="Millimeters" height="1.1" package-id="SOT-23-5" speed="1.0" pick-retry-count="0"/>
 </openpnp-parts>
