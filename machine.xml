@@ -1,5 +1,5 @@
 <openpnp-machine>
-   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.28" auto-tool-select="true" safe-Z-park="true">
+   <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="0.3" auto-tool-select="true" safe-Z-park="true">
       <axes>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS16426decf928a508" name="X" type="X" driver-id="DRV16426decf5f501b0" letter="X" backlash-compensation-method="DirectionalSneakUp" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -316,7 +316,7 @@
                   <interlock-monitor class="org.openpnp.machine.reference.ActuatorInterlockMonitor" interlock-type="ConfirmMatchBeforeAxesMove" interlock-axis-1-id="AXS16426decf928a508" interlock-axis-2-id="AXS16426decf933bf9c" interlock-axis-3-id="AXS16426decf96801bc" interlock-axis-4-id="AXS16426decf9692970" confirmation-good-min="0.0" confirmation-good-max="0.0" confirmation-by-regex="false" conditional-actuator-id="ACT1579799796417" conditional-actuator-state="SwitchedOffOrUnknown" conditional-speed-min="0.3" conditional-speed-max="1.0">
                      <confirmation-pattern><![CDATA[1]]></confirmation-pattern>
                   </interlock-monitor>
-                  <head-offsets units="Millimeters" x="45.89" y="19.62" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="45.95" y="19.391" z="0.0" rotation="0.0"/>
                   <safe-z value="0.0" units="Millimeters"/>
                </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1579879539027" name="VAC" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16426decf5f501b0" coordinated-before-actuate="false" coordinated-after-actuate="false" coordinated-before-read="false" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
@@ -401,7 +401,7 @@
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567791783360" name="FD01" enabled="true" part-id="C_0603_1608Metric-100n" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="59.008" y="36.247" z="-10.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="39.683" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="39.683" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="39.683" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -412,9 +412,9 @@
             <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792126705" name="FD02" enabled="true" part-id="R_0603_1608Metric-10K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.8" y="49.237" z="-10.0" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="69.0" y="52.764" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="52.764" z="0.0" rotation="0.0"/>
+            <location units="Millimeters" x="58.94" y="49.237" z="-10.0" rotation="90.0"/>
+            <feed-start-location units="Millimeters" x="69.0" y="52.714" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="52.714" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -425,9 +425,9 @@
             <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792310223" name="FD03" enabled="true" part-id="R_0603_1608Metric-1K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.955" y="62.026" z="-10.0" rotation="90.0"/>
+            <location units="Millimeters" x="58.955" y="62.226" z="-10.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="65.717" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="65.717" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="65.717" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -439,8 +439,8 @@
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792433598" name="FD04" enabled="true" part-id="R_0603_1608Metric-10" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="59.016" y="74.969" z="-10.0" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="69.0" y="78.578" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="78.578" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="69.0" y="78.678" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="78.678" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -452,8 +452,8 @@
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792632938" name="FD05" enabled="false" part-id="R0603-1K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="59.078" y="88.236" z="-10.0" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="69.0" y="91.651" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="91.651" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="69.0" y="91.751" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="91.751" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -461,12 +461,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567792723477" name="FD06" enabled="true" part-id="R_0603_1608Metric-100K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="58.92" y="101.056" z="-10.0" rotation="90.0"/>
+            <location units="Millimeters" x="59.02" y="101.056" z="-10.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="104.666" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="104.666" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="104.666" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -474,12 +474,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567793098472" name="FD07" enabled="true" part-id="R_0603_1608Metric-150K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.891" y="114.107" z="-10.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="117.611" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="117.611" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="117.611" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -492,7 +492,7 @@
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567793256319" name="FD08" enabled="true" part-id="C_0603_1608Metric-10n" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.936" y="127.142" z="-10.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="130.665" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="130.665" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="130.665" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -505,7 +505,7 @@
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567793343417" name="FD09" enabled="true" part-id="R_0603_1608Metric-100" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="59.018" y="140.071" z="-10.0" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="143.646" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="143.646" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="143.646" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -513,12 +513,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567793452198" name="FD10" enabled="true" part-id="C_0402_1005Metric-100n" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
-            <location units="Millimeters" x="59.059" y="153.297" z="-10.0" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="69.0" y="156.779" z="1.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="156.779" z="0.0" rotation="0.0"/>
+            <location units="Millimeters" x="58.959" y="153.197" z="-10.0" rotation="90.0"/>
+            <feed-start-location units="Millimeters" x="69.0" y="156.679" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.4" y="156.679" z="0.0" rotation="0.0"/>
             <part-pitch value="2.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -526,12 +526,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567793553775" name="FD11" enabled="true" part-id="R_0603_1608Metric-120" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.955" y="166.214" z="-10.0" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="69.0" y="169.755" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="169.755" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="69.0" y="169.655" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="169.655" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -539,12 +539,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1562009109766" name="FD12" enabled="true" part-id="R_0603_1608Metric-22" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.901" y="179.168" z="-10.0" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="69.0" y="182.714" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="182.714" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="69.0" y="182.614" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="182.614" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -552,12 +552,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.5" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567793655391" name="FD13" enabled="true" part-id="L_0805_2012Metric-Ferrite" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="59.036" y="192.014" z="-9.6" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="195.6" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="195.6" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="195.6" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -570,7 +570,7 @@
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567793771970" name="FD14" enabled="true" part-id="Fuse_0603_1608Metric-3A_32V" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.914" y="205.183" z="-9.6" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="208.611" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="208.611" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="208.611" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -578,7 +578,7 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567794036193" name="FD15" enabled="true" part-id="SOT-23-PESD5V2S2UT" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.809" y="218.248" z="-9.7" rotation="90.0"/>
@@ -609,7 +609,7 @@
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567794214754" name="FD17" enabled="true" part-id="R_0603_1608Metric-560" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.871" y="244.311" z="-9.6" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="247.692" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="247.692" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="247.692" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -617,12 +617,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567794347991" name="FD18" enabled="true" part-id="R_0603_1608Metric-120K" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.971" y="257.211" z="-9.6" rotation="90.0"/>
             <feed-start-location units="Millimeters" x="69.0" y="260.692" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="260.692" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="260.692" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -630,12 +630,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567794482526" name="FD19" enabled="true" part-id="C_0805_2012Metric-10u" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.914" y="269.997" z="-9.6" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="69.0" y="273.788" z="0.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.4" y="273.788" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="69.0" y="273.588" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="273.588" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -643,12 +643,12 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567794582332" name="FD20" enabled="false" part-id="C_0805_2012Metric-10u" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="59.184" y="283.359" z="-9.6" rotation="90.0"/>
-            <feed-start-location units="Millimeters" x="69.229" y="286.749" z="1.0" rotation="0.0"/>
-            <feed-end-location units="Millimeters" x="73.629" y="286.749" z="0.0" rotation="0.0"/>
+            <feed-start-location units="Millimeters" x="69.0" y="286.749" z="0.0" rotation="0.0"/>
+            <feed-end-location units="Millimeters" x="73.6" y="286.749" z="0.0" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <feed-speed>1.0</feed-speed>
             <vision enabled="false">
@@ -656,7 +656,7 @@
                <template-image-top-left units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                <template-image-bottom-right units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             </vision>
-            <backoff-distance value="0.3" units="Millimeters"/>
+            <backoff-distance value="0.4" units="Millimeters"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceDragFeeder" version="1.1" id="FDR1567794673731" name="FD21" enabled="true" part-id="SM_0603_CGR_N-680" retry-count="3" feed-retry-count="0" pick-retry-count="0" actuator-name="DRAGPIN" peel-off-actuator-name="LFEEDER">
             <location units="Millimeters" x="58.174" y="298.38" z="-9.0" rotation="90.0"/>
@@ -2355,9 +2355,9 @@
                <text><![CDATA[{False:M805   ; close N2 vacuum solenoid / open N2 blower solenoid }]]></text>
             </command>
             <command head-mountable-id="ACT1579799796417" type="ACTUATE_BOOLEAN_COMMAND">
-               <text><![CDATA[{True:  M816 S100}	; DRAGPIN M816 down @100%]]></text>
+               <text><![CDATA[{True:  M816 S30}	; DRAGPIN M816 down @100%]]></text>
                <text><![CDATA[{True:  G4 P10}		; wait a little bit until the pin is down]]></text>
-               <text><![CDATA[{True:  M816 S10}	; switch to hold @10%]]></text>
+               <text><![CDATA[{True:  M816 S12}	; switch to hold @10%]]></text>
                <text><![CDATA[{False: M817}		; DRAGPIN M817 release]]></text>
                <text><![CDATA[{False: G4 P50}	; wait a little bit until the pin is up (avoid false interlock errors)]]></text>
             </command>
@@ -2549,7 +2549,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.07717938687728457" center-y="-0.1382935562737538" radius="0.02448055393046157" phase-shift="-5.126974717311984" units="Millimeters" peak-error="0.012990179962529939" rms-error="0.009967345059195326"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.03274277019036315" center-y="-0.014063751485466493" radius="0.0219644697599815" phase-shift="-45.96814711538689" units="Millimeters" peak-error="0.014625514778864371" rms-error="0.01060816232076718"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
@@ -2842,7 +2842,7 @@
                <runout-compensation-lookup class="java.util.HashMap">
                   <entry>
                      <string>N2</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.17540769744837403" center-y="-0.21447221015336404" radius="0.03755019522304563" phase-shift="155.9903466337607" units="Millimeters" peak-error="0.013313645171070455" rms-error="0.008544772578476282"/>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.15435877375456916" center-y="-0.1547012663401314" radius="0.0413414043139942" phase-shift="108.39688632488435" units="Millimeters" peak-error="0.01803970916995189" rms-error="0.010375727997399853"/>
                   </entry>
                </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
